@@ -35,11 +35,7 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RTX`);
 });
 
-client.on('ready', (c) => {
-  client.user.setActivity({
-    name: "/pomoc"
-  });
-});
+const statusMessages = ["Lubie was!"];
 
 
 let currentIndex = 0;

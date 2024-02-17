@@ -35,8 +35,11 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RTX`);
 });
 
-
-const statusMessages = ["Czyta Ticket"];
+client.on('ready', (c) => {
+  client.user.setActivity({
+    name: "/pomoc"
+  });
+});
 
 
 let currentIndex = 0;
